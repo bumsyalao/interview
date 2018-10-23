@@ -1,0 +1,43 @@
+{
+  "name": "interview",
+  "version": "1.0.0",
+  "description": "pair programming",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register --timeout 30000  --exit test/**",
+    "start": "nodemon src/functions.js --exec babel-node --presets es2015,stage-2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bumsyalao/interview.git"
+  },
+  "keywords": [
+    "javascript"
+  ],
+  "author": "Bunmi Alao",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bumsyalao/interview/issues"
+  },
+  "homepage": "https://github.com/bumsyalao/interview#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.0",
+    "dotenv": "^6.1.0",
+    "enzyme": "^3.7.0",
+    "express": "^4.16.4",
+    "mocha": "^5.2.0",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7",
+    "supertest": "^3.3.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "jasmine": "^3.2.0",
+    "jest": "^23.6.0",
+    "nodemon": "^1.18.4"
+  }
+}
